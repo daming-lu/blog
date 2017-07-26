@@ -6,7 +6,7 @@
 
 1. Run the following command inside the repo directory:
     ```bash
-    docker run --rm -v `pwd`:/data -it -p 4000:4000 jekyll/jekyll:3.5 bash -c 'cd /data && jekyll serve --watch'
+    docker run --rm --privileged=true --label=jekyll --volume=$(pwd)/jekyll:/srv/jekyll --volume=$(pwd)/posts:/srv/jekyll/_posts jekyll/jekyll:3.5 jekyll serve -w
     ```
 
 1. Open browser and visit http://localhost:4000
