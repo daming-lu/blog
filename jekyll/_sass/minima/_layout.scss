@@ -2,253 +2,18 @@
  * Site header
  */
 .site-header {
+  //border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.865;
+  background: #000;
+  padding: 0px 100px;
 
-  background-color: #000000;
-  height: 60px;
-  padding: 0 100px;
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
-
-.row{
-    margin: 0 auto;
-    width: 1080px;
+.site-header .wrapper {
 }
-
-header.site-header {
-    background-color: #000000;
-    height: 60px;
-    padding: 0 100px;
-}
-header.site-header > nav.row > * {
-    display: inline-block;
-    height: 60px;
-}
-header.site-header .logo {
-    float: left;
-    height: 60px;
-}
-header.site-header .logo > img {
-    height: 60px;
-}
-header.site-header .top-nav {
-    font-size: 14px;
-    margin-left: 155px;
-    margin-right: auto;
-}
-header.site-header .top-nav .site-links {
-    display: inline-block;
-    float: left;
-}
-header.site-header .top-nav .site-links > li {
-    display: inline-block;
-    float: left;
-    height: 60px;
-}
-header.site-header .top-nav .site-links > li > a {
-    color: #fff;
-    display: inline-block;
-    height: 100%;
-    line-height: 60px;
-    padding: 0 20px;
-}
-header.site-header .top-nav .site-links > li > a:hover {
-    background-color: #222222;
-    color: #0073eb;
-    text-decoration:none;
-}
-header.site-header .top-nav .version-switcher {
-    display: inline-block;
-    float: left;
-    height: 60px;
-    position: relative;
-    width: 100px;
-}
-header.site-header .top-nav .version-switcher:hover > a {
-    color: #fff;
-    cursor: default;
-}
-header.site-header .top-nav .version-switcher:hover > a .fa::before {
-    content: "";
-}
-header.site-header .top-nav .version-switcher > a {
-    color: rgba(255, 255, 255, 0.7);
-    display: inline-block;
-    line-height: 60px;
-    padding: 0 20px;
-}
-header.site-header .top-nav .version-switcher > a .fa::before {
-    content: "";
-    margin-left: 5px;
-}
-header.site-header .top-nav .version-switcher ul {
-    background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
-    color: #0073eb;
-    display: none;
-    left: -30px;
-    line-height: 50px;
-    position: absolute;
-    text-align: center;
-    top: 60px;
-    width: 100px;
-    list-style: outside none none;
-}
-header.site-header .top-nav .version-switcher ul > li > a {
-    color: #ababab;
-    display: block;
-    height: 50px;
-    width: 99px;
-}
-header.site-header .top-nav .version-switcher ul > li > a:hover {
-    background-color: #222;
-    color: #0073eb;
-}
-header.site-header .top-nav .version-switcher:hover ul {
-    display: inline-block;
-}
-header.site-header .right-nav {
-    float: right;
-    font-size: 14px;
-}
-header.site-header .right-nav .language-switcher {
-    display: inline-block;
-    float: left;
-    position: relative;
-}
-header.site-header .right-nav .language-switcher > a {
-    color: #fff;
-    display: inline-block;
-    line-height: 60px;
-    margin-right: 10px;
-    text-align: center;
-    width: 80px;
-}
-header.site-header .right-nav .language-switcher > a .fa::before {
-    content: "";
-    margin-left: 5px;
-}
-header.site-header .right-nav .language-switcher > a:hover {
-    background-color: #222;
-    color: #0073eb;
-}
-header.site-header .github-fork {
-    float: left;
-}
-header.site-header .github-fork > a {
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 40px;
-    margin: 10px 0;
-    padding: 0 10px;
-    width: 100px;
-}
-header.site-header .github-fork > a .fa {
-    float: left;
-    font-size: 20px;
-    margin-right: 10px;
-    margin-top: 8px;
-}
-header.site-header .github-fork > a span {
-    float: left;
-    margin-right: 10px;
-}
-header.site-header .github-fork > a:hover {
-    color: #fff;
-}
-
-
-
-.footer-nav {
-    background-color: #333;
-}
-.footer-nav .intern-console {
-    color: #ccc;
-    display: inline;
-    float: left;
-    font-size: 12px;
-    line-height: 30px;
-    margin-left: 50px;
-    margin-right: 19px;
-    width: 150px;
-}
-.footer-nav .chat-console {
-    border-left: 1px solid rgba(241, 242, 244, 0.2);
-    border-right: 1px solid rgba(241, 242, 244, 0.2);
-    color: #ccc;
-    display: inline;
-    float: left;
-    font-size: 12px;
-    padding-left: 50px;
-    width: 600px;
-}
-.footer-nav .chat-console .sub-top-nava > li {
-    display: inline;
-    float: left;
-    line-height: 30px;
-    margin-bottom: 20px;
-    width: 25%;
-}
-.footer-nav .public-console {
-    display: inline;
-    float: left;
-    margin-left: 49px;
-    margin-right: 50px;
-    width: 100px;
-}
-.footer-nav .public-console > * {
-}
-.footer-nav .public-console > img {
-    margin-right: 5px;
-}
-.footer-nav .public-console > p {
-    color: #ccc;
-    font-size: 14px;
-}
-.footer-nav .contact-us {
-    color: #fff;
-    font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-    text-align: center;
-}
-.footer-nav .contact-us > * {
-    vertical-align: middle;
-}
-.footer-nav .contact-us > img {
-    margin-right: 5px;
-}
-.footer-nav .contact-us > a {
-    color: #fff;
-}
-.footer-nav .friendly-links {
-    margin-bottom: 40px;
-    text-align: center;
-}
-.footer-nav .friendly-links > li {
-    display: inline-block;
-    line-height: 12px;
-    padding: 0 10px;
-}
-.footer-nav .friendly-links > li > a {
-    color: #ccc;
-    font-size: 12px;
-}
-.footer-nav .copyright {
-    color: #666;
-    font-size: 12px;
-    margin-bottom: -10px;
-    padding: 20px 0;
-    text-align: center;
-}
-.footer-nav .copyright > a {
-    color: #fff;
-}
-
-
-
 
 .site-title {
   @include relative-font-size(1.525);
@@ -256,7 +21,6 @@ header.site-header .github-fork > a:hover {
   line-height: $base-line-height * $base-font-size * 2.35;
   letter-spacing: 0.2px;
   margin-bottom: 0;
-  margin-left: 15%;
   float: left;
   color: #fff;
   text-decoration: none;
@@ -271,14 +35,12 @@ header.site-header .github-fork > a:hover {
   }
 
   img {
-    height: 60px;
+    width: 152px;
   }
 }
 
 .site-nav {
-  margin-top: 8px;
   float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
   background: #000;
 
   .nav-trigger {
@@ -292,7 +54,10 @@ header.site-header .github-fork > a:hover {
 
   .page-link {
     color: #fff;
-    line-height: $base-line-height;
+    line-height: 58px;
+		display: inline-block;
+		height: 58px;
+		padding: 0px 15px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -360,10 +125,16 @@ header.site-header .github-fork > a:hover {
       &:not(:last-child) {
         margin-right: 0;
       }
-      margin-left: 20px;
     }
   }
 }
+
+header.site-header .site-nav .trigger > a:hover {
+	background-color: #222222;
+	color: #0073eb;
+	text-decoration:none;
+}
+
 
 
 
@@ -513,7 +284,3 @@ header.site-header .github-fork > a:hover {
     }
   }
 }
-
-
-
-

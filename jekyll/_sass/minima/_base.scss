@@ -14,14 +14,18 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: tahoma,arial,Hiragino Sans GB,Microsoft YaHei;
-  margin: 0;
-  min-width: 1080px;
-  position: relative;
-  z-index: 1;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }
 
-   
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
